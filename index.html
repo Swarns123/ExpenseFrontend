@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Expense Tracker</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" <!-- CSS -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-container">
+<header class="app-header">
+<h1 class="app-title">Expense Tracker</h1>
+<p class="app-subtitle">Track and manage your daily expenses</p>
+</header>
+<section class="controls">
+<button id="loadHardcodedBtn" class="btn primary">Load Sample Data</button>
+<button id="loadApiBtn" class="btn secondary">Fetch from API</button>
+</section>
+<section id="statusMessage" class="status-message"></section>
+<section class="expense-section">
+<div id="expenseList" class="expense-list"></div>
+</section>
+</div>
+<script src="expense.js"></script>
+<script src="api.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Body */
+body {
+font-family: 'Inter', sans-serif;
+background: #f4f6f9;
+color: #1f2937;
+}
+/* Container */
+.app-container {
+max-width: 900px;
+margin: 40px auto;
+padding: 20px;
+}
+/* Header */
+.app-header {
+text-align: center;
+margin-bottom: 30px;
+}
+.app-title {
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 8px;
+}
+.app-subtitle {
+font-size: 14px;
+color: #6b7280;
+}
+/* Buttons Section */
+.controls {
+display: flex;
+justify-content: center;
+gap: 12px;
+margin-bottom: 25px;
+}
+/* Buttons */
+.btn {
+padding: 10px 18px;
+border-radius: 6px;
+border: none;
+font-size: 14px;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+.primary {
+background-color: #2563eb;
+color: white;
+}
+.primary:hover {
+background-color: #1d4ed8;
+}
+.secondary {
+background-color: #e5e7eb;
+color: #111827;
+}
+.secondary:hover {
+background-color: #d1d5db;
+}
+/* Status Message */
+.status-message {
+text-align: center;
+margin-bottom: 20px;
+font-size: 14px;
+color: #ef4444;
+}
+/* Expense Section */
+.expense-section {
+display: flex;
+justify-content: center;
+}
+/* Expense List Grid */
+.expense-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 16px;
+width: 100%;
+}
+/* Expense Card */
+.expense-card {
+background: white;
+border-radius: 10px;
+padding: 16px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.expense-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+/* Card Content */
+.expense-title {
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 6px;
+}
+.expense-category {
+font-size: 13px;
+color: #6b7280;
+margin-bottom: 10px;
+}
+.expense-amount {
+font-size: 18px;
+font-weight: 600;
+color: #16a34a;
+margin-bottom: 6px;
+}
+.expense-date {
+font-size: 12px;
+color: #9ca3af;
+}
